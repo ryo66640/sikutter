@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>sikutter</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous">
+</head>
+<body>
+	<h1>アカウント登録</h1>
+	
+	<form th:action="@{/new}" method="post" th:object="${userInfoForm}">
+		<p>username
+		<input type="text" name="username" id="username" placeholder="username">
+		<p>password
+		<input type="password" name="password" id="password" placeholder="password">
+		<input type="submit" id="register-button" value="REGISTER">
+	</form>
+
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>sikutter</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous">	
+	</head>
+	<body>
+		<div class = "container">
+			<table class="table table-striped table-sm">
+				<thead>
+					<tr>
+						<th>No.</th>
+						<th>username</th>
+						<th>text</th>
+					</tr>	
+				</thead>
+				<tbody>
+					<tr th:each="message : ${messages}">
+						<td th:text=${message.id} />
+						<td th:text=${message.talker} />
+						<td th:text=${message.text} />
+					</tr>				
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
