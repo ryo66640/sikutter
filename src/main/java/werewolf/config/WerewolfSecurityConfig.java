@@ -10,7 +10,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 @EnableWebSecurity
-public class SikutterSecurityConfig extends WebSecurityConfigurerAdapter{
+public class WerewolfSecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Autowired
 	private UserDetailsService userDetailsService;
@@ -24,7 +24,7 @@ public class SikutterSecurityConfig extends WebSecurityConfigurerAdapter{
 				.authenticated();
 		http.formLogin()
 				.loginPage("/login")
-				.defaultSuccessUrl("/sikutter")
+				.defaultSuccessUrl("/game-config")
 				.failureUrl("/login-error")
 				.permitAll();
 		http.logout()

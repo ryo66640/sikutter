@@ -3,21 +3,22 @@
 <head>
 	<title>login</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous">
+	<link rel="stylesheet" href="../static/css/login.css">
 </head>
 <body>
-
-	<form th:action="@{/login}" method="post" class="login-form">
-		<p>username
-		<input type="text" name="username" id="username" placeholder="username">
-		<p>password
-		<input type="password" name="password" id="password" placeholder="password">
+	<h2>Login</h2>
+	<form th:action="@{/login}" method="post" id="loginForm">
+		<div id="inputForm">
+		<p>USERNAME
+		<input type="text" name="username" id="username" class="inputForm" placeholder="username">
+		</p>
+		<p>PASSWORD
+		<input type="password" name="password" id="password" class="inputForm" placeholder="password">
+		</p>
 		<input type="submit" id="login-button" value="LOGIN">
+		</div>
 	</form>
-	
-	<a href="new">アカウント作成へ</a>
+	<a href="new" >アカウント作成へ</a>
 
 </body>
 </html>

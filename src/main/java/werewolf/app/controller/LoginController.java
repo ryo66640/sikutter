@@ -56,15 +56,5 @@ public class LoginController {
 		model.addAttribute("username", username);
 		model.addAttribute("password", rawPassword);
 		return "/result";
-	}
-
-	@GetMapping("/userlist")
-	public String showUserList(Model model) {
-		List<User> users = service.findAll();
-		model.addAttribute("users", users);
-		return "/userlist";
-	}
-
-
-	
+	}	
 }

@@ -1,0 +1,44 @@
+#infomationArea{
+	background: red;
+	position: absolute;
+	right: 25%;	
+	width: 20%;
+	height: 20%;
+	z-index: 1;
+}
+
+#agentArea{
+	border: medium;
+	background: green;
+	position: absolute;
+	left: 1%;
+	right: 25%;
+	height: 45%;	
+}
+
+#talkArea{
+	border: medium;
+	background: blue;
+	position: absolute;
+	top : 1%;
+	bottom: 1%;
+	right: 1%;
+	height: 94%;
+	width: 20%;
+}
+
+#talkForm{
+	position: absolute;
+	bottom: 1%;
+	
+}
+
+#resultArea{
+	border: medium;
+	background: orange;
+	position: absolute;
+	top: 50%;
+	left: 1%;
+	right: 25%;
+	height: 45%;
+}

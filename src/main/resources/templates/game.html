@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>WebWerewolf</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../static/css/game.css">
+</head>
+
+<body>
+
+	<div id="infomationArea">
+		<p>Day ?
+		<p>生存数
+		<p>吊り縄
+	</div>
+
+	<div id="agentArea">
+		<table>
+			<thead>
+				<tr>
+					<th>名前
+					<th>状態
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>sample0
+					<td>o
+				</tr>
+				<tr>
+					<td>sample1
+					<td>o
+				</tr>
+				<tr>
+					<td>sample2
+					<td>x
+				</tr>
+				<tr>
+					<td>sample3
+					<td>o
+				</tr>
+				<tr>
+					<td>sample4
+					<td>x
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div id="resultArea">
+		<div id=divineResult>
+			<p>sample0 : {sample4:x -> sample3:o}
+			<p>sample1 : {sample2:x -> sample4:o}
+		</div>
+		
+		<div id=deadResult>
+			<p> {sample5 -> sample2}
+		</div>
+		
+	</div>
+	
+	<div id="talkArea">
+		<div id="talkHistory">
+			<p>TALK GUESS
+			<p>TALK DOUBT
+			<p>TALK VOTE
+		</div>		
+		<form id="talkForm" th:action="@{/talk}" th:object="${talkForm}">
+			<select id="talkType" name="talkType">
+				<option>COMINGOUT</option>
+				<option>AGREE</option>
+				<option>DISAGREE</option>
+				<option>VOTE</option>
+			</select>
+
+			<select id="target" name="targetName">
+				<option>sample0</option>
+				<option>sample1</option>
+				<option>sample2</option>
+				<option>sample3</option>
+			</select>
+			
+			<select id = "role" name="role">
+				<option>VILLAGER</option>
+				<option>SEER</option>
+				<option>WEREWOLF</option>
+			</select>
+			
+			<select id = "judge">
+				<option>BLACK</option>
+				<option>WHITE</option>
+			</select>
+
+			<input type="submit" value="発言">
+		</form>				
+	</div>
+</body>
+</html>
