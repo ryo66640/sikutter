@@ -1,4 +1,4 @@
-package sikutter.app.controller;
+package werewolf.app.controller;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import sikutter.domain.model.User;
-import sikutter.domain.model.UserInfoForm;
-import sikutter.domain.service.UserAccountService;
+import werewolf.domain.model.User;
+import werewolf.domain.model.UserInfoForm;
+import werewolf.domain.service.UserAccountService;
 
 @Controller
 public class LoginController {

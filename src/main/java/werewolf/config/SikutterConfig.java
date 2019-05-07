@@ -1,4 +1,4 @@
-package sikutter.config;
+package werewolf.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

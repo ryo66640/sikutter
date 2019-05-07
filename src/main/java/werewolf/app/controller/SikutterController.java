@@ -1,4 +1,4 @@
-package sikutter.app.controller;
+package werewolf.app.controller;
 
 import java.security.Principal;
 import java.util.List;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import sikutter.domain.model.Message;
-import sikutter.domain.model.MessageForm;
-import sikutter.domain.service.SikutterService;
+import werewolf.domain.model.Message;
+import werewolf.domain.model.MessageForm;
+import werewolf.domain.service.SikutterService;
 
 @Controller
 public class SikutterController {

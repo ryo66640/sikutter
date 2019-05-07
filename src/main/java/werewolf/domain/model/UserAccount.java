@@ -1,4 +1,4 @@
-package sikutter.domain.model;
+package werewolf.domain.model;
 
 import java.util.Collection;
 

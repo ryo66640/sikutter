@@ -1,4 +1,4 @@
-package sikutter.domain.service;
+package werewolf.domain.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import sikutter.domain.model.Message;
-import sikutter.domain.repository.MessageRepository;
+import werewolf.domain.model.Message;
+import werewolf.domain.repository.MessageRepository;
 
 @Service
 @Transactional

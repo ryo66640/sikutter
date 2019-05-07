@@ -1,4 +1,4 @@
-package sikutter.config;
+package werewolf.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

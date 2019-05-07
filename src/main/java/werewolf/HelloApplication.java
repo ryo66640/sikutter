@@ -1,4 +1,4 @@
-package sikutter;
+package werewolf;
 
 
 import org.springframework.boot.SpringApplication;

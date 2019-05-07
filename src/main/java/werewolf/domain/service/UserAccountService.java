@@ -1,4 +1,4 @@
-package sikutter.domain.service;
+package werewolf.domain.service;
 
 import java.util.Collection;
 import java.util.List;
@@ -13,9 +13,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import sikutter.domain.model.User;
-import sikutter.domain.model.UserAccount;
-import sikutter.domain.repository.UserRepository;
+import werewolf.domain.model.User;
+import werewolf.domain.model.UserAccount;
+import werewolf.domain.repository.UserRepository;
 
 @Service
 @Transactional

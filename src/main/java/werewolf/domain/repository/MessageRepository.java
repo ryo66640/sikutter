@@ -1,9 +1,9 @@
-package sikutter.domain.repository;
+package werewolf.domain.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import sikutter.domain.model.Message;
+import werewolf.domain.model.Message;
 
 @Repository
 public interface MessageRepository extends JpaRepository<Message, Long>{
