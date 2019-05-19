@@ -4,5 +4,7 @@ public enum TalkType {
 	COMINGOUT,
 	AGREE,
 	DISAGREE,
-	VOTE
+	VOTE,
+	SKIP,
+	OVER
 }

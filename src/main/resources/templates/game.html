@@ -3,7 +3,7 @@
 <head>
 	<title>WebWerewolf</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="../static/css/game.css">
+	<link rel="stylesheet" href="/css/game.css">
 </head>
 
 <body>
@@ -46,25 +46,23 @@
 			</tbody>
 		</table>
 	</div>
-	
+
 	<div id="resultArea">
 		<div id=divineResult>
 			<p>sample0 : {sample4:x -> sample3:o}
 			<p>sample1 : {sample2:x -> sample4:o}
 		</div>
-		
+
 		<div id=deadResult>
 			<p> {sample5 -> sample2}
 		</div>
-		
+
 	</div>
-	
+
 	<div id="talkArea">
 		<div id="talkHistory">
-			<p>TALK GUESS
-			<p>TALK DOUBT
-			<p>TALK VOTE
-		</div>		
+			<textarea rows="" cols="" readonly="readonly" id="textarea">aiueo</textarea>
+		</div>
 		<form id="talkForm" th:action="@{/talk}" th:object="${talkForm}">
 			<select id="talkType" name="talkType">
 				<option>COMINGOUT</option>
@@ -79,20 +77,26 @@
 				<option>sample2</option>
 				<option>sample3</option>
 			</select>
-			
+
 			<select id = "role" name="role">
 				<option>VILLAGER</option>
 				<option>SEER</option>
 				<option>WEREWOLF</option>
 			</select>
-			
+
 			<select id = "judge">
 				<option>BLACK</option>
 				<option>WHITE</option>
 			</select>
 
 			<input type="submit" value="発言">
-		</form>				
+		</form>
 	</div>
+
+<script type="text/javascript">
+
+</script>
+	<script src="../static/js/game.js" charset="utf-8"></script>
+
 </body>
 </html>

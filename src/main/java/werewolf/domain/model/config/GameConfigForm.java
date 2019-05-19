@@ -1,4 +1,4 @@
-package werewolf.domain.model;
+package werewolf.domain.model.config;
 
 import lombok.Data;
 

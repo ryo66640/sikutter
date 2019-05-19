@@ -27,6 +27,15 @@
 	width: 20%;
 }
 
+#talkArea textarea{
+	background: #00bbbb;
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	right: 1%;
+	height: 80%;
+}
+
 #talkForm{
 	position: absolute;
 	bottom: 1%;

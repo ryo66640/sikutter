@@ -3,10 +3,9 @@ package werewolf.domain.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import werewolf.domain.model.Message;
+import werewolf.domain.model.Talk;
 
 @Repository
-public interface MessageRepository extends JpaRepository<Message, Long>{
+public interface TalkRepository extends JpaRepository<Talk, Long>{
 	
-
 }

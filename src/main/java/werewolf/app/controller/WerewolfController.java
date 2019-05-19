@@ -2,7 +2,6 @@ package werewolf.app.controller;
 
 import java.security.Principal;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,24 +13,28 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import werewolf.domain.model.GameConfig;
-import werewolf.domain.model.GameConfigForm;
-import werewolf.domain.model.Message;
-import werewolf.domain.model.MessageForm;
 import werewolf.domain.model.Role;
 import werewolf.domain.model.Talk;
 import werewolf.domain.model.TalkForm;
 import werewolf.domain.model.UserType;
-import werewolf.domain.service.SikutterService;
+import werewolf.domain.model.agent.Villager;
+import werewolf.domain.model.config.GameConfig;
+import werewolf.domain.model.config.GameConfigForm;
+import werewolf.domain.model.config.GameInfo;
+import werewolf.domain.service.WerewolfService;
 
 @Controller
 public class WerewolfController {
 	
-	private final SikutterService service;
+	private final WerewolfService service;
+	private final GameConfig gameConfig;
+	private final GameInfo gameInfo;
 	
 	@Autowired
-	public WerewolfController(SikutterService service) {
+	public WerewolfController(WerewolfService service, GameConfig gameConfig, GameInfo gameInfo) {
 		this.service = service;
+		this.gameConfig = gameConfig;
+		this.gameInfo = gameInfo;
 	}
 		
 	@ModelAttribute
@@ -61,13 +64,11 @@ public class WerewolfController {
 		roleNumMap.put(Role.SEER, form.getSeer());
 		roleNumMap.put(Role.WEREWOLF, form.getWerewolf());
 
-		GameConfig gameInfo = new GameConfig();
-		gameInfo.setUserTypeNumMap(userTypeNumMap);
-		gameInfo.setRoleNumMap(roleNumMap);
-		
+		gameConfig.setUserTypeNumMap(userTypeNumMap);
+		gameConfig.setRoleNumMap(roleNumMap);
+				
 		//TODO:この辺でgameinfoをサーバ側に渡して設定を保持させたい
-		System.out.println(gameInfo.getRoleNumMap());
-		System.out.println(gameInfo.getUserTypeNumMap());
+		
 		
 		return "/game";
 	}
@@ -80,6 +81,7 @@ public class WerewolfController {
 	@PostMapping("/talk")
 	public void talk(@Validated TalkForm form, BindingResult result, Model model, Principal principal) {
 		Talk talk = new Talk();
+		
 		
 		//TODO:この辺でサーバ側に発言を処理させたい
 		//戻り値ないんだけどこの時model返しても意味ないのでは？
