@@ -3,23 +3,25 @@
 <head>
 	<title>sikutter</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous">
+	<link rel="stylesheet" href="../static/css/new.css">
 </head>
 <body>
-	<h1>アカウント登録</h1>
-	
+	<h2>Create Account</h2>
+
 	<form th:action="@{/new}" method="post" th:object="${userInfoForm}">
-		<p>username
-		<input type="text" name="username" id="username" placeholder="username">
-		<p>password
-		<input type="password" name="password" id="password" placeholder="password">
-		<input type="submit" id="register-button" value="REGISTER">
+		<div id="inputForm">
+		<p>USERNAME
+		<input type="text" name="username" id="username" class="inputForm" placeholder="username">
+		</p>
+		<p>PASSWORD
+		<input type="password" name="password" id="password" class="inputForm" placeholder="password">
+		</p>
+		<input type="submit" id="login-button" value="REGISTER">
+		</div>
 	</form>
 
-	
-	
-	
+
+
+
 </body>
 </html>

@@ -1,16 +1,58 @@
-#formArea{
-	
+body{
+	background: gray;
+}
+
+h2{
+	text-align: center;
+	font-size: 32pt;
+}
+
+#formArea form{
+	position: relative;
+	border-style: double;
+	margin: 10px auto;
+  width: 500px;
 }
 
 #userNumInfo{
-	float: left;
+	position: relative;
+	width: 50%;
+}
+#userNumInfo p{
+	text-align: right;
 }
 
 #roleNumInfo{
-	float: left;
+	position: relative;
+	top: -90px;
+	left: 65%;
+	width: 30%;
+}
+
+#roleNumInfo p{
+	text-align: right;
 }
 
 #confirm{
-	clear: left;
-	
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#confirm #return{
+	position: relative;
+	margin-left: 40%;
+}
+
+#confirm #decide{
+	position: relative;
+	margin-left: 10%;
+}
+
+
+.inputForm{
+	border: ridge;
+	border-color: blue;
+	font-size: 12pt;
+	width: 50px;
 }

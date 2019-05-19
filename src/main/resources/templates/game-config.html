@@ -1,26 +1,46 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>login</title>
+	<title>game-config</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="/css/game-config.css">
+	<link rel="stylesheet" href="../static/css/game-config.css">
 </head>
 <body>
-	<form th:action="@{/game}" th:object="${gameConfigForm}" method="post" id="formArea">
-		<div id="userNumInfo">
-			<p>参加するプレイヤー数<input type="text" name="playerNum">
-			<p>参加するCPU数<input type="text" name="computerNum">
-		</div>
-		<div id="roleNumInfo">
-			<p>村人数<input type="text" name="villager">
-			<p>占い師数<input type="text" name="seer">
-			<p>人狼数<input type="text" name="werewolf">
-		</div>
-		
-		<div id="confirm">
-			<input type="button" value="戻る">
-			<input type="submit" value="決定">
-		</div>
-	</form>
+
+	<h2>GameConfig</h2>
+
+	<div id="formArea">
+
+		<form th:action="@{/game}" th:object="${gameConfigForm}" method="post">
+
+			<div id="userNumInfo">
+				<p>参加するプレイヤー数
+				<input type="text" name="playerNum" class="inputForm">
+				</p>
+				<p>参加するCPU数
+				<input type="text" name="computerNum" class="inputForm">
+				</p>
+			</div>
+
+			<div id="roleNumInfo">
+				<p>村人数
+				<input type="text" name="villager" class="inputForm">
+				</p>
+				<p>占い師数
+				<input type="text" name="seer" class="inputForm">
+				</p>
+				<p>人狼数
+				<input type="text" name="werewolf" class="inputForm">
+				</p>
+			</div>
+
+			<div id="confirm">
+				<input type="button" value="戻る" id="return">
+				<input type="submit" value="決定" id="decide">
+			</div>
+
+		</form>
+
+	</div>
 </body>
 </html>
