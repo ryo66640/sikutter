@@ -2,6 +2,30 @@ body{
 	background: gray;
 }
 
+.parents{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+form{
+	text-align: center;
+}
+
+#login-button{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+form a{
+	position: relative;
+}
+
 .inputForm{
 	border: ridge;
 	border-color: blue;
@@ -11,17 +35,7 @@ body{
 h2{
 	text-align: center;
 	font-size: 32pt;
-}
-
-#login-button{
-	position: absolute;
-	left: 45%;
-	width: 10%;
-}
-
-a{
-	position: absolute;
-	right: 30%;
+	margin-top: 0px;
 }
 
 #inputForm p{

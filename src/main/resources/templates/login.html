@@ -6,9 +6,10 @@
 	<link rel="stylesheet" href="../static/css/login.css">
 </head>
 <body>
+	<div class="parents">
+
 	<h2>Login</h2>
 	<form th:action="@{/login}" method="post" id="loginForm">
-		<div id="inputForm">
 		<p>USERNAME
 		<input type="text" name="username" id="username" class="inputForm" placeholder="username">
 		</p>
@@ -16,9 +17,9 @@
 		<input type="password" name="password" id="password" class="inputForm" placeholder="password">
 		</p>
 		<input type="submit" id="login-button" value="LOGIN">
-		</div>
+		<a href="new" >アカウント作成へ</a>
 	</form>
-	<a href="new" >アカウント作成へ</a>
+	</div>
 
 </body>
 </html>

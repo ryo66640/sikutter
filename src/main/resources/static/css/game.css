@@ -1,53 +1,159 @@
+body{
+	background: gray;
+}
+h1{
+	position: relative;
+	margin: auto;
+	color: BLACK;
+}
+
+#configArea{
+	position: relative;
+	width: auto;
+	background-color: antiqueWhite;
+	border: 3px double black;
+}
+
+#configArea p{
+	position: relative;
+	background-color: darkslategray;
+	color: white;
+	text-align: center;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 5px;
+}
+
+#configArea ul{
+	list-style-type: none;
+	text-align: left;
+}
+
+#configArea li{
+	display: inline-block;
+	margin: 0 10px;
+}
+
 #infomationArea{
-	background: red;
-	position: absolute;
-	right: 25%;	
-	width: 20%;
-	height: 20%;
-	z-index: 1;
+	position: relative;
+	width: 100%;
+
+}
+
+#infomationArea ul{
+	list-style-type: none;
+	text-align: left;
+}
+
+#infomationArea li{
+	display: inline-block;
+	color: BLACK;
+	margin: 10px;
+
 }
 
 #agentArea{
-	border: medium;
-	background: green;
-	position: absolute;
-	left: 1%;
-	right: 25%;
-	height: 45%;	
+	border: 3px double BLACK;
+	background: antiqueWhite;
+	position: relative;
+	margin-top: 10px
+
+}
+
+#agentArea p{
+	position: relative;
+	background-color: darkslategray;
+	color: white;
+	text-align: center;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 5px;
+}
+
+#agents{
+	list-style-type: none;
+	margin-inline-start: -20px;
+}
+
+#agents li{
+	display: inline-block;
+	background-color: darkgreen;
+	color: WHITE;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5%;
+}
+
+.wolf:before{
+	font-family: "Font Awesome 5 Free";
+	content: '\f504';
+	font-weight: 900;
 }
 
 #talkArea{
-	border: medium;
-	background: blue;
-	position: absolute;
-	top : 1%;
-	bottom: 1%;
-	right: 1%;
-	height: 94%;
-	width: 20%;
+	border: 3px double BLACK;
+	background: antiqueWhite;
+	position: relative;
+	height: 300px;
+	margin: 10px auto;
+}
+
+#talkArea p{
+	position: relative;
+	background-color: darkslategray;
+	color: white;
+	text-align: center;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 5px;
+
 }
 
 #talkArea textarea{
-	background: #00bbbb;
+	background: WHITE;
 	position: absolute;
-	top: 1%;
-	left: 1%;
-	right: 1%;
-	height: 80%;
+	top: 40px;
+	bottom: 10%;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 #talkForm{
 	position: absolute;
 	bottom: 1%;
-	
+	right: 1%;
+	left: 1%;
+	text-align: right;
+}
+
+#talk{
+	position: relative;
+	width: 50%;
 }
 
 #resultArea{
-	border: medium;
-	background: orange;
-	position: absolute;
-	top: 50%;
-	left: 1%;
-	right: 25%;
-	height: 45%;
+	border: 3px double black;
+	background: antiqueWhite;
+	position: relative;
+}
+
+#resultArea li{
+	display: block;
+	color: BLACK;
+	margin: 10px;
+
+}
+
+.results{
+	position: relative;
+	background-color: darkslategray;
+	color: white;
+	text-align: center;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 5px;
 }
